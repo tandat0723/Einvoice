@@ -1,0 +1,51 @@
+﻿ <!--  Demos -->
+<link rel="stylesheet" href="../assets/owlcarousel/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="../assets/owlcarousel/assets/owl.theme.default.min.css">
+<script src="~/assets/owlcarousel/owl.carousel.js"></script>
+<div class="row">
+
+    <div class="owl-carousel owl-theme">
+        <div class="item">
+            <img src="https://member.katinat.vn/assets/katinat/01.jpg">
+        </div>
+        <div class="item">
+            <img src="https://member.katinat.vn/assets/katinat/02.jpg">
+        </div>
+        <div class="item">
+            <img src="https://member.katinat.vn/assets/katinat/03.jpg">
+        </div>
+        <div class="item">
+            <img src="https://member.katinat.vn/assets/katinat/04.jpg">
+        </div>
+
+    </div>
+</div>
+
+<script>$(document).ready(function () {
+        $('.owl-carousel').owlCarousel({
+            responsiveClass: true,
+            items: 4,
+            loop: true,
+            margin: 0,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true
+                },
+                600: {
+                    items: 1,
+                    nav: false
+                },
+                1000: {
+                    items: 1,
+                    nav: true,
+                    loop: false,
+                    margin: 20
+                }
+            }
+        })
+    })</script>
+

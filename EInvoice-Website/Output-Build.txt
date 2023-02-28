@@ -1,0 +1,8 @@
+﻿Build started...
+1>------ Build started: Project: GLS_PlandingPage, Configuration: Release Any CPU ------
+1>D:\HoangDieu\SenVang\GoldenPosSolutions\D1.SourceCode\LandingPage2022\Helpers\DataObject.cs(37,30,37,32): warning CS0168: The variable 'ex' is declared but never used
+1>D:\HoangDieu\SenVang\GoldenPosSolutions\D1.SourceCode\LandingPage2022\Controllers\HomeController.cs(264,30,264,32): warning CS0168: The variable 'ex' is declared but never used
+1>D:\HoangDieu\SenVang\GoldenPosSolutions\D1.SourceCode\LandingPage2022\Controllers\HomeController.cs(282,30,282,32): warning CS0168: The variable 'ex' is declared but never used
+1>D:\HoangDieu\SenVang\GoldenPosSolutions\D1.SourceCode\LandingPage2022\Controllers\HomeController.cs(387,30,387,32): warning CS0168: The variable 'ex' is declared but never used
+1>  GLS_PlandingPage -> D:\HoangDieu\SenVang\GoldenPosSolutions\D1.SourceCode\LandingPage2022\bin\SenVang.Dashboard.dll
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========

@@ -1,0 +1,432 @@
+﻿@model SenVang.Dashboard.Models.Response.BillResponse
+
+@{
+    ViewBag.Title = "ExportBill";
+}
+
+
+<section id="customer-form">
+    <div class="row">
+
+        <div class="col-md-1 hidden-xs">
+            &nbsp;
+        </div>
+
+        <div class="col-md-9 col-xs-12">
+            <div class="" align="center">
+                <h4>XUẤT HÓA ĐƠN KATINAT</h4>
+                <p>(Chỉ áp dụng cho hóa đơn bán trong ngày)</p>
+                <p class="error" style="color:red;font-weight:bold;">
+                    @ViewBag.Message
+                    @ViewBag.MessageErrors
+                </p>
+                <p class="success" style="color:green;font-weight:bold;">
+                    @ViewBag.Success
+                </p>
+            </div>
+
+            <div class="form contact-form">
+                <form action="" method="post" role="form" class="customer-form">
+                    <div class="row">
+                        <label class="control-label col-md-3 col-xs-12" for="first-name">
+                            Chi nhánh <span style="color:red;">(*)</span>:
+                        </label>
+                        <div class="col-md-9 col-xs-12">
+                            @(Html.DevExtreme().SelectBox()
+                            .ID("slb_Branch")
+                            .DataSource(ViewBag.BranchName.DataResult)
+                            .DisplayExpr("BranchName")
+                            .ValueExpr("BranchId")
+                            .Value(1)
+                            )
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label class="control-label col-md-3 col-xs-12" for="first-name">
+                            Mã Bill <span style="color:red;">(*)</span>:
+                        </label>
+                        <div class="col-md-9 col-xs-12">
+                            @(Html.DevExtreme().TextBox()
+                                .ID("txt_BillID")
+                                .Placeholder("Nhập mã bill")
+                                .ShowClearButton(true)
+                            )
+                        </div>
+                    </div>
+
+                    <div id="customer-information-title" class="customer-information-title" align="center">
+                        <h5>THÔNG TIN KHÁCH MUA HÀNG</h5>
+                    </div>
+
+                    <div class="row">
+                        <label class="control-label col-md-3 col-xs-12" for="first-name">
+                            Mã số thuế: <span style="color:red;">(*)</span>:
+                        </label>
+                        <div class="col-md-9 col-xs-12">
+                            @(Html.DevExtreme().TextBox()
+                                .ID("txt_CustomerID")
+                            .Placeholder("Nhập mã số thuế")
+                            .ShowClearButton(true)
+                            .OnValueChanged("ValidateTaxCode")
+                            )
+                            <span id="status" class="error" style="display:none"></span>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label class="control-label col-md-3 col-xs-12" for="first-name">
+                            Tên công ty: <span style="color:red;">(*)</span>:
+                        </label>
+                        <div class="col-md-9 col-xs-12">
+                            @(Html.DevExtreme().TextBox()
+                                .ID("txt_Company")
+                            .Placeholder("Nhập tên công ty")
+                            .ShowClearButton(true)
+                            )
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label class="control-label col-md-3 col-xs-12" for="first-name">
+                            Địa chỉ: <span style="color:red;">(*)</span>:
+                        </label>
+                        <div class="col-md-9 col-xs-12">
+                            @(Html.DevExtreme().TextBox()
+                                .ID("txt_Address")
+                            .Placeholder("Nhập địa chỉ")
+                            .ShowClearButton(true)
+                            )
+                        </div>
+                    </div>
+
+
+
+                    <div class="row">
+                        <label class="control-label col-md-3 col-xs-12" for="first-name">
+                            Email: <span style="color:red;">(*)</span>:
+                        </label>
+                        <div class="col-md-9 col-xs-12">
+                            @(Html.DevExtreme().TextBox()
+                                .ID("txt_Email")
+                            .Placeholder("Nhập Email")
+                            .ShowClearButton(true)
+                            )
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label class="control-label col-md-3 col-xs-12" for="first-name">
+                            Điện thoại: <span style="color:red;">(*)</span>:
+                        </label>
+                        <div class="col-md-9 col-xs-12">
+                            @(Html.DevExtreme().TextBox()
+                                .ID("txt_Phone")
+                            .Placeholder("")
+                            .MaskRules(new JS("/[02-9]/"))
+                            .ShowClearButton(true)
+                            )
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label class="control-label col-md-3 col-xs-12" for="first-name">
+                        </label>
+                        <div class="col-md-9 col-xs-12">
+                            <div class="text-center" id="dvCaptcha">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                        <input type="hidden" id="hfCaptcha" />
+                        <span id="rfvCaptcha" class="error" style="display:none">Captcha validation is required.</span>
+                        <br />
+                        <div id="summary"></div>
+                        <button class="btn btn-success" id="btnSubmit" type="button">Gửi yêu cầu</button>
+                    </div>
+                </form>
+                @(Html.DevExtreme().Toast()
+                            .ID("toast")
+                            .DisplayTime(1000)
+                        )
+            </div>
+        </div>
+
+        <div class="col-md-1 hidden-xs">
+            &nbsp;
+        </div>
+    </div>
+</section>
+
+<script src="https://www.google.com/recaptcha/api.js"></script>
+<script type="text/javascript" src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+        async defer></script>
+
+
+
+<script type="text/javascript">
+    var onloadCallback = function () {
+        grecaptcha.render('dvCaptcha', {
+            'sitekey': '6Le52YEhAAAAAO2kol41-A2UizBjhGoCbLRNnuoT',
+            'callback': function (response) {
+                $.ajax({
+                    type: "POST",
+                    url: "/Home/AjaxMethod",
+                    data: "{response: '" + response + "'}",
+                    dataType: "json",
+                    success: function (r) {
+                        var captchaResponse = jQuery.parseJSON(r);
+                        if (captchaResponse.success) {
+                            $("#hfCaptcha").val(captchaResponse.success);
+                            $("#rfvCaptcha").hide();
+                        } else {
+                            $("#hfCaptcha").val("");
+                            $("#rfvCaptcha").show();
+                            var error = captchaResponse["error-codes"][0];
+                            $("#rfvCaptcha").html("RECaptcha error. " + error);
+                        }
+                    }
+                });
+            }
+        });
+    };
+
+    $(function () {
+        $("#btnSubmit").click(function () {
+            var TicketCode = $('#txt_BillID').dxTextBox('instance').option('value');
+            var CompanyName = $('#txt_Company').dxTextBox('instance').option('value');
+            var CompanyAddress = $('#txt_Address').dxTextBox('instance').option('value');
+            var TaxCode = $('#txt_CustomerID').dxTextBox('instance').option('value');
+            var Email = $('#txt_Email').dxTextBox('instance').option('value');
+            var Phone = $('#txt_Phone').dxTextBox('instance').option('value');
+            var BranchId = $('#slb_Branch').dxSelectBox('instance').option('value');
+
+            if (BranchId == '') {
+                $("#toast").dxToast('instance').option({
+                    type: 'error',
+                    message: 'Vui lòng chọn thông tin chi nhánh',
+                    visible: true
+                });
+                return false;
+            }
+            if (TicketCode == '') {
+                $("#toast").dxToast('instance').option({
+                    type: 'error',
+                    message: 'Vui lòng nhập thông tin mã bill',
+                    visible: true
+                });
+                return false;
+            }
+            if (CompanyName == '') {
+                $("#toast").dxToast('instance').option({
+                    type: 'error',
+                    message: 'Vui lòng nhập thông tin tên công ty',
+                    visible: true
+                });
+                return false;
+            }
+            if (CompanyAddress == '') {
+                $("#toast").dxToast('instance').option({
+                    type: 'error',
+                    message: 'Vui lòng nhập thông tin địa chỉ',
+                    visible: true
+                });
+                return false;
+            }
+            if (TaxCode == '') {
+                $("#toast").dxToast('instance').option({
+                    type: 'error',
+                    message: 'Vui lòng nhập thông tin mã khách hàng',
+                    visible: true
+                });
+                return false;
+            }
+            if (Email == '') {
+                $("#toast").dxToast('instance').option({
+                    type: 'error',
+                    message: 'Vui lòng nhập thông tin email',
+                    visible: true
+                });
+                return false;
+            }
+            if (Email != "" && validateEmail(Email) == false) {
+                $('#txt_Email').focus();
+                $("#toast").dxToast("instance").option({
+                    type: 'error',
+                    message: 'Email không hợp lệ! Vui lòng kiểm tra lại!',
+                    visible: true
+                });
+                return;
+            }
+            if (Phone == '') {
+                $("#toast").dxToast('instance').option({
+                    type: 'error',
+                    message: 'Vui lòng nhập thông tin điện thoại',
+                    visible: true
+                });
+                return false;
+            }
+            if (Phone != "" && validatePhone(Phone) == false) {
+                $('#txt_Phone').focus();
+                $("#toast").dxToast("instance").option({
+                    type: 'error',
+                    message: 'Số điện thoại không hợp lệ! Vui lòng kiểm tra lại!',
+                    visible: true
+                });
+                return;
+            }
+
+            //document.getElementById("btnSubmit").disabled = false;
+            $.ajax({
+                type: 'POST',
+                url: '/Home/CheckLimiteInvoice',
+                data: 'TaxCode=' + TaxCode,
+                success: function (res) {
+                    //console.log();
+                    if (res.Success) {
+                        $("#toast").dxToast("instance").option({
+                            type: 'success',
+                            message: res.MessageErrors,
+                            visible: true
+                        });
+                        EinvoiceWaiting();
+                        clearData();
+
+                    } else {
+                        $("#toast").dxToast("instance").option({
+                            type: 'error',
+                            message: "Số lần mã đã xuất tối đa",
+                            visible: true
+                        });
+                    }
+                }
+            })
+        })
+    });
+
+    function clearData() {
+        $("#txt_Company").dxTextBox("instance").option("");
+        $("#txt_BillID").dxTextBox("instance").option("");
+        $("#txt_Address").dxTextBox("instance").option("");
+        $("#txt_Email").dxTextBox("instance").option("");
+        $("#txt_CustomerID").dxTextBox("instance").option("");
+        $("#txt_Phone").dxTextBox("instance").option("");
+        $("#slb_Branch").dxSelectBox("instance").option("");
+    }
+
+
+    function checkreCaptcha() {
+        var response = grecaptcha.getResponse();
+        $.ajax({
+            type: 'POST',
+            url: '/Home/ReCaptcha',
+            data: 'response=' + response,
+
+            success: function (r) {
+                var captchaResponse = jQuery.parseJSON(r);
+                if (captchaResponse.success) {
+                    $("#hfCaptcha").val(captchaResponse.success);
+                    $("#rfvCaptcha").hide();
+                } else {
+                    $("#hfCaptcha").val("");
+                    $("#rfvCaptcha").show();
+                    var error = captchaResponse["error-codes"][0];
+                    $("#rfvCaptcha").html("RECaptcha error. " + error);
+                }
+            }
+        })
+    }
+
+
+    function EinvoiceWaiting() {
+        var TicketCode = $('#txt_BillID').dxTextBox('instance').option('value');
+        var CompanyName = $('#txt_Company').dxTextBox('instance').option('value');
+        var CompanyAddress = $('#txt_Address').dxTextBox('instance').option('value');
+        var CompanyTax = $('#txt_CustomerID').dxTextBox('instance').option('value');
+        var Email = $('#txt_Email').dxTextBox('instance').option('value');
+        var Phone = $('#txt_Phone').dxTextBox('instance').option('value');
+        var BranchId = $('#slb_Branch').dxSelectBox('instance').option('value');
+
+        var Header = {
+            "BranchId": BranchId,
+            "TicketCode": TicketCode,
+            "CompanyName": CompanyName,
+            "CompanyAddress": CompanyAddress,
+            "CompanyTax": CompanyTax,
+            "Email": Email,
+            "Phone": Phone
+        }
+
+        var jPost = {
+            "Header": Header
+        }
+
+
+        var jpost = JSON.stringify(jPost);
+        jpost = encodeURIComponent(jpost); 
+        $.ajax({
+            type: 'POST',
+            url: "/Home/EinvoiceWaiting",
+            data: 'jpost=' + jpost,
+
+            success: function (res) {
+                if (res.Success) {
+                    $("#toast").dxToast("instance").option({
+                        type: 'success',
+                        message: res.MessageErrors,
+                        visible: true
+                    });
+                    window.location = "/"; 
+                } else {
+
+                    $("#toast").dxToast("instance").option({
+                        type: 'error',
+                        message: res.MessageErrors,
+                        visible: true
+                    });
+                }
+            }
+        })
+    }
+    function ValidateTaxCode() {
+        var taxcode = $('#txt_CustomerID').dxTextBox('instance').option('value');
+        if (taxcode == "") {
+            showWaring("Vui lòng nhập mã số thuế !");
+            $("#txt_CustomerID").focus();
+            return;
+        }
+        $('#txt_Company').dxTextBox('instance').option('value','');
+        $('#txt_Address').dxTextBox('instance').option('value', '');
+
+        txt_Company
+        $.ajax({
+            type: 'POST',
+            url: "/Home/CheckTaxCode/?taxcode=" + taxcode,
+            success: function (res) {
+                console.log(res);
+
+                if (res == "-1") {
+                    showWaring("Mã số thuế không đúng. Vui lòng kiểm tra lại !");
+                    $("#txt_CustomerID").focus();
+                    return;
+                }
+                else { 
+                    $('#txt_Company').dxTextBox('instance').option('value', res.ten_cty);
+                    $('#txt_Address').dxTextBox('instance').option('value', res.dia_chi);
+
+                }
+            }
+        });
+    }
+
+    function showWaring(s) {
+        $("#toast").dxToast("instance").option({
+            type: 'error',
+            message: s,
+            visible: true
+        }); 
+    }
+    
+
+</script>

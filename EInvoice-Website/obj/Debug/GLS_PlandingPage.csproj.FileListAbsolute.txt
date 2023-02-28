@@ -1,0 +1,90 @@
+D:\HoangDieu\SenVang\GoldenPosSolutions\D1.SourceCode\LandingPage_Katinat\NewSource\obj\Debug\GLS_PlandingPage.csproj.AssemblyReference.cache
+D:\HoangDieu\SenVang\GoldenPosSolutions\D1.SourceCode\LandingPage_Katinat\NewSource\obj\Debug\GLS_PlandingPage.csproj.CoreCompileInputs.cache
+D:\HoangDieu\SenVang\GoldenPosSolutions\D1.SourceCode\LandingPage_Katinat\NewSource\obj\Debug\SenVang.Dashboard.dll
+D:\HoangDieu\SenVang\GoldenPosSolutions\D1.SourceCode\LandingPage_Katinat\NewSource\obj\Debug\SenVang.Dashboard.pdb
+D:\HoangDieu\SenVang\GoldenPosSolutions\D1.SourceCode\LandingPage_Katinat\NewSource\bin\SenVang.Dashboard.dll.config
+D:\HoangDieu\SenVang\GoldenPosSolutions\D1.SourceCode\LandingPage_Katinat\NewSource\bin\SenVang.Dashboard.dll
+D:\HoangDieu\SenVang\GoldenPosSolutions\D1.SourceCode\LandingPage_Katinat\NewSource\bin\SenVang.Dashboard.pdb
+D:\HoangDieu\SenVang\GoldenPosSolutions\D1.SourceCode\LandingPage_Katinat\NewSource\bin\System.Net.Http.Formatting.dll
+D:\HoangDieu\SenVang\GoldenPosSolutions\D1.SourceCode\LandingPage_Katinat\NewSource\obj\Debug\GLS_PlandingPage.csproj.CopyComplete
+C:\Users\ADMIN\Downloads\NewSource (1)\bin\SenVang.Dashboard.dll.config
+C:\Users\ADMIN\Downloads\NewSource (1)\bin\SenVang.Dashboard.dll
+C:\Users\ADMIN\Downloads\NewSource (1)\bin\SenVang.Dashboard.pdb
+C:\Users\ADMIN\Downloads\NewSource (1)\obj\Debug\GLS_PlandingPage.csproj.AssemblyReference.cache
+C:\Users\ADMIN\Downloads\NewSource (1)\obj\Debug\GLS_PlandingPage.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Downloads\NewSource (1)\obj\Debug\GLS_PlandingPage.csproj.CopyComplete
+C:\Users\ADMIN\Downloads\NewSource (1)\obj\Debug\SenVang.Dashboard.dll
+C:\Users\ADMIN\Downloads\NewSource (1)\obj\Debug\SenVang.Dashboard.pdb
+C:\Users\ADMIN\Downloads\NewSource (1)\bin\Newtonsoft.Json.dll
+C:\Users\ADMIN\Downloads\NewSource (1)\bin\Newtonsoft.Json.xml
+D:\SENVANG SVN\SVN KAT LANDING PAGE\Landing page\bin\SenVang.Dashboard.dll.config
+D:\SENVANG SVN\SVN KAT LANDING PAGE\Landing page\bin\SenVang.Dashboard.dll
+D:\SENVANG SVN\SVN KAT LANDING PAGE\Landing page\bin\SenVang.Dashboard.pdb
+D:\SENVANG SVN\SVN KAT LANDING PAGE\Landing page\bin\Newtonsoft.Json.dll
+D:\SENVANG SVN\SVN KAT LANDING PAGE\Landing page\obj\Debug\GLS_PlandingPage.csproj.CoreCompileInputs.cache
+D:\SENVANG SVN\SVN KAT LANDING PAGE\Landing page\obj\Debug\GLS_PlandingPage.csproj.CopyComplete
+D:\SENVANG SVN\SVN KAT LANDING PAGE\Landing page\obj\Debug\SenVang.Dashboard.dll
+D:\SENVANG SVN\SVN KAT LANDING PAGE\Landing page\obj\Debug\SenVang.Dashboard.pdb
+D:\SENVANG SVN\SVN KAT LANDING PAGE\Landing page\obj\Debug\GLS_PlandingPage.csproj.AssemblyReference.cache
+D:\HoangDieu\SenVang\GoldenPosSolutions\D1.SourceCode\LandingPage_Katinat\Landing page_thien\Landing page\bin\SenVang.Dashboard.dll.config
+D:\HoangDieu\SenVang\GoldenPosSolutions\D1.SourceCode\LandingPage_Katinat\Landing page_thien\Landing page\bin\SenVang.Dashboard.dll
+D:\HoangDieu\SenVang\GoldenPosSolutions\D1.SourceCode\LandingPage_Katinat\Landing page_thien\Landing page\bin\SenVang.Dashboard.pdb
+D:\HoangDieu\SenVang\GoldenPosSolutions\D1.SourceCode\LandingPage_Katinat\Landing page_thien\Landing page\bin\Newtonsoft.Json.dll
+D:\HoangDieu\SenVang\GoldenPosSolutions\D1.SourceCode\LandingPage_Katinat\Landing page_thien\Landing page\bin\System.Net.Http.Formatting.dll
+D:\HoangDieu\SenVang\GoldenPosSolutions\D1.SourceCode\LandingPage_Katinat\Landing page_thien\Landing page\obj\Debug\GLS_PlandingPage.csproj.AssemblyReference.cache
+D:\HoangDieu\SenVang\GoldenPosSolutions\D1.SourceCode\LandingPage_Katinat\Landing page_thien\Landing page\obj\Debug\GLS_PlandingPage.csproj.CoreCompileInputs.cache
+D:\HoangDieu\SenVang\GoldenPosSolutions\D1.SourceCode\LandingPage_Katinat\Landing page_thien\Landing page\obj\Debug\GLS_PlandingPage.csproj.CopyComplete
+D:\HoangDieu\SenVang\GoldenPosSolutions\D1.SourceCode\LandingPage_Katinat\Landing page_thien\Landing page\obj\Debug\SenVang.Dashboard.dll
+D:\HoangDieu\SenVang\GoldenPosSolutions\D1.SourceCode\LandingPage_Katinat\Landing page_thien\Landing page\obj\Debug\SenVang.Dashboard.pdb
+D:\HoangDieu\SenVang\GoldenPosSolutions\D1.SourceCode\LandingPage_Katinat\Landing page_thien\Landing page\bin\Newtonsoft.Json.xml
+C:\Users\ADMIN\Downloads\Landing page_thien\Landing page_thien\Landing page\bin\SenVang.Dashboard.dll.config
+C:\Users\ADMIN\Downloads\Landing page_thien\Landing page_thien\Landing page\bin\SenVang.Dashboard.dll
+C:\Users\ADMIN\Downloads\Landing page_thien\Landing page_thien\Landing page\bin\SenVang.Dashboard.pdb
+C:\Users\ADMIN\Downloads\Landing page_thien\Landing page_thien\Landing page\bin\Newtonsoft.Json.dll
+C:\Users\ADMIN\Downloads\Landing page_thien\Landing page_thien\Landing page\obj\Debug\GLS_PlandingPage.csproj.AssemblyReference.cache
+C:\Users\ADMIN\Downloads\Landing page_thien\Landing page_thien\Landing page\obj\Debug\GLS_PlandingPage.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Downloads\Landing page_thien\Landing page_thien\Landing page\obj\Debug\GLS_PlandingPage.csproj.CopyComplete
+C:\Users\ADMIN\Downloads\Landing page_thien\Landing page_thien\Landing page\obj\Debug\SenVang.Dashboard.dll
+C:\Users\ADMIN\Downloads\Landing page_thien\Landing page_thien\Landing page\obj\Debug\SenVang.Dashboard.pdb
+C:\Users\ADMIN\Downloads\Landing page_thien\Landing page_thien\Landing page\bin\Newtonsoft.Json.xml
+D:\SENVANG SVN\SVN KAT LANDING PAGE\Landing page\bin\Newtonsoft.Json.xml
+D:\HoangDieu\SenVang\GoldenPosSolutions\D1.SourceCode\LandingPage2022\bin\SenVang.Dashboard.dll.config
+D:\HoangDieu\SenVang\GoldenPosSolutions\D1.SourceCode\LandingPage2022\bin\SenVang.Dashboard.dll
+D:\HoangDieu\SenVang\GoldenPosSolutions\D1.SourceCode\LandingPage2022\bin\SenVang.Dashboard.pdb
+D:\HoangDieu\SenVang\GoldenPosSolutions\D1.SourceCode\LandingPage2022\bin\Microsoft.Web.Infrastructure.dll
+D:\HoangDieu\SenVang\GoldenPosSolutions\D1.SourceCode\LandingPage2022\bin\System.Net.Http.Formatting.dll
+D:\HoangDieu\SenVang\GoldenPosSolutions\D1.SourceCode\LandingPage2022\bin\System.Web.Helpers.dll
+D:\HoangDieu\SenVang\GoldenPosSolutions\D1.SourceCode\LandingPage2022\bin\System.Web.Mvc.dll
+D:\HoangDieu\SenVang\GoldenPosSolutions\D1.SourceCode\LandingPage2022\bin\System.Web.Optimization.dll
+D:\HoangDieu\SenVang\GoldenPosSolutions\D1.SourceCode\LandingPage2022\bin\System.Web.Razor.dll
+D:\HoangDieu\SenVang\GoldenPosSolutions\D1.SourceCode\LandingPage2022\bin\System.Web.WebPages.Deployment.dll
+D:\HoangDieu\SenVang\GoldenPosSolutions\D1.SourceCode\LandingPage2022\bin\System.Web.WebPages.dll
+D:\HoangDieu\SenVang\GoldenPosSolutions\D1.SourceCode\LandingPage2022\bin\System.Web.WebPages.Razor.dll
+D:\HoangDieu\SenVang\GoldenPosSolutions\D1.SourceCode\LandingPage2022\bin\WebGrease.dll
+D:\HoangDieu\SenVang\GoldenPosSolutions\D1.SourceCode\LandingPage2022\bin\System.Web.Helpers.xml
+D:\HoangDieu\SenVang\GoldenPosSolutions\D1.SourceCode\LandingPage2022\bin\System.Web.Mvc.xml
+D:\HoangDieu\SenVang\GoldenPosSolutions\D1.SourceCode\LandingPage2022\bin\System.Web.Optimization.xml
+D:\HoangDieu\SenVang\GoldenPosSolutions\D1.SourceCode\LandingPage2022\bin\System.Web.Razor.xml
+D:\HoangDieu\SenVang\GoldenPosSolutions\D1.SourceCode\LandingPage2022\bin\System.Web.WebPages.xml
+D:\HoangDieu\SenVang\GoldenPosSolutions\D1.SourceCode\LandingPage2022\bin\System.Web.WebPages.Deployment.xml
+D:\HoangDieu\SenVang\GoldenPosSolutions\D1.SourceCode\LandingPage2022\bin\System.Web.WebPages.Razor.xml
+D:\HoangDieu\SenVang\GoldenPosSolutions\D1.SourceCode\LandingPage2022\obj\Debug\GLS_PlandingPage.csproj.AssemblyReference.cache
+D:\HoangDieu\SenVang\GoldenPosSolutions\D1.SourceCode\LandingPage2022\obj\Debug\GLS_PlandingPage.csproj.CoreCompileInputs.cache
+D:\HoangDieu\SenVang\GoldenPosSolutions\D1.SourceCode\LandingPage2022\obj\Debug\GLS_PlandingPage.csproj.CopyComplete
+D:\HoangDieu\SenVang\GoldenPosSolutions\D1.SourceCode\LandingPage2022\obj\Debug\SenVang.Dashboard.dll
+D:\HoangDieu\SenVang\GoldenPosSolutions\D1.SourceCode\LandingPage2022\obj\Debug\SenVang.Dashboard.pdb
+D:\HoangDieu\SenVang\GoldenPosSolutions\D1.SourceCode\LandingPage2022\bin\Newtonsoft.Json.xml
+C:\Users\My Computer\Downloads\Jobs\LANDING_PAGE\bin\SenVang.Dashboard.dll.config
+C:\Users\My Computer\Downloads\Jobs\LANDING_PAGE\bin\SenVang.Dashboard.dll
+C:\Users\My Computer\Downloads\Jobs\LANDING_PAGE\bin\SenVang.Dashboard.pdb
+C:\Users\My Computer\Downloads\Jobs\LANDING_PAGE\bin\DevExtreme.AspNet.Data.dll
+C:\Users\My Computer\Downloads\Jobs\LANDING_PAGE\bin\DevExtreme.AspNet.Mvc.dll
+C:\Users\My Computer\Downloads\Jobs\LANDING_PAGE\bin\Newtonsoft.Json.dll
+C:\Users\My Computer\Downloads\Jobs\LANDING_PAGE\bin\DevExtreme.AspNet.Data.xml
+C:\Users\My Computer\Downloads\Jobs\LANDING_PAGE\bin\DevExtreme.AspNet.Mvc.xml
+C:\Users\My Computer\Downloads\Jobs\LANDING_PAGE\bin\Newtonsoft.Json.xml
+C:\Users\My Computer\Downloads\Jobs\LANDING_PAGE\obj\Debug\GLS_PlandingPage.csproj.CoreCompileInputs.cache
+C:\Users\My Computer\Downloads\Jobs\LANDING_PAGE\obj\Debug\GLS_PlandingPage.csproj.CopyComplete
+C:\Users\My Computer\Downloads\Jobs\LANDING_PAGE\obj\Debug\SenVang.Dashboard.dll
+C:\Users\My Computer\Downloads\Jobs\LANDING_PAGE\obj\Debug\SenVang.Dashboard.pdb
+C:\Users\My Computer\Downloads\Jobs\LANDING_PAGE\obj\Debug\GLS_PlandingPage.csproj.AssemblyReference.cache
